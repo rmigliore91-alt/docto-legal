@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad – Docto</title>
+<meta name="description" content="Política de privacidad de Docto, app de apoyo a la decisión clínica para Paraguay: qué datos se tratan, para qué, con quién se comparten y cómo eliminar tu cuenta.">
+<style>
+  :root {
+    --bg: #fcfbf7; --surface: #ffffff; --text: #1c1b17; --muted: #5d5b52;
+    --border: #e2dfd4; --head: #f3f1ea; --accent: #0b6b57; --note-bg: #eef6f3; --note-border: #b9ddd2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151512; --surface: #1d1d19; --text: #ecebe4; --muted: #b3b1a6;
+      --border: #3a3932; --head: #262520; --accent: #6fd3bb; --note-bg: #17302a; --note-border: #2d5a4e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 780px; margin: 0 auto; padding: 32px 16px 72px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 2.2rem 0 .6rem; scroll-margin-top: 16px; }
+  h3 { font-size: 1rem; margin: 1.4rem 0 .4rem; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); margin: 0 0 24px; font-size: .95rem; }
+  a { color: var(--accent); }
+  nav { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 18px; margin: 20px 0; }
+  nav ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; font-size: .95rem; }
+  @media (max-width: 560px) { nav ol { columns: 1; } }
+  .table-wrap { overflow-x: auto; margin: 12px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; background: var(--surface); }
+  th, td { border: 1px solid var(--border); padding: 9px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--head); font-weight: 600; }
+  .note { background: var(--note-bg); border: 1px solid var(--note-border); border-radius: 12px; padding: 12px 16px; margin: 14px 0; }
+  .note p { margin: .3rem 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Docto</h1>
+  <p class="meta">Vigente desde el 10 de octubre de 2026 · Aplica a la app Docto para Android e iOS (identificador <code>com.pydoctus.app</code>)</p>
+
+  <p>Docto es una aplicación de apoyo a la decisión clínica para profesionales y estudiantes de la salud en Paraguay. Reúne un vademécum, la clasificación CIE-10, calculadoras clínicas y un verificador de interacciones. Esta política explica qué datos personales trata la app, para qué los usa, con quién los comparte, cuánto tiempo los conserva y cómo podés ejercer tus derechos, incluida la eliminación de tu cuenta.</p>
+
+  <div class="note">
+    <p><strong>En resumen:</strong> pedimos solo lo necesario para tu cuenta (correo, contraseña y un perfil profesional opcional) y tus calculadoras favoritas. No vendemos datos, no mostramos publicidad, no usamos analítica ni rastreo de terceros y no accedemos a tu ubicación, contactos, cámara, micrófono ni fotos. Podés eliminar tu cuenta desde la app en cualquier momento.</p>
+  </div>
+
+  <nav aria-label="Contenido">
+    <ol>
+      <li><a href="#responsable">Responsable y contacto</a></li>
+      <li><a href="#datos">Datos que tratamos</a></li>
+      <li><a href="#no-recopilamos">Lo que no recopilamos</a></li>
+      <li><a href="#finalidades">Finalidades y base legal</a></li>
+      <li><a href="#dispositivo">Datos en tu dispositivo</a></li>
+      <li><a href="#proveedores">Proveedores y transferencias</a></li>
+      <li><a href="#seguridad">Seguridad</a></li>
+      <li><a href="#conservacion">Conservación</a></li>
+      <li><a href="#eliminar-cuenta">Eliminar tu cuenta</a></li>
+      <li><a href="#derechos">Tus derechos</a></li>
+      <li><a href="#menores">Menores de edad</a></li>
+      <li><a href="#aviso-clinico">Aviso clínico</a></li>
+      <li><a href="#cambios">Cambios a esta política</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="responsable">1. Responsable y contacto</h2>
+  <p>El responsable del tratamiento de los datos es el desarrollador de Docto. Para cualquier consulta, solicitud o reclamo sobre privacidad, escribí a <a href="mailto:roberto.migliore@iribas.com.py">roberto.migliore@iribas.com.py</a>. Respondemos en un plazo máximo de 30 días.</p>
+
+  <h2 id="datos">2. Datos que tratamos</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Dato</th><th>Origen</th><th>Para qué</th><th>Dónde se guarda</th></tr></thead>
+    <tbody>
+      <tr><td>Correo electrónico</td><td>Lo ingresás al crear la cuenta</td><td>Identificarte e iniciar sesión</td><td>Servidores de Supabase</td></tr>
+      <tr><td>Contraseña</td><td>La ingresás al crear la cuenta</td><td>Autenticación. Solo se guarda un hash; nunca tenemos acceso a la contraseña en texto plano.</td><td>Servidores de Supabase</td></tr>
+      <tr><td>Perfil profesional: nombre, género, profesión, especialidad, institución y número de registro profesional (MSPBS)</td><td>Los completás vos; todos los campos son opcionales</td><td>Personalizar la app y, en el futuro, verificar tu condición de profesional</td><td>Servidores de Supabase y una copia en tu dispositivo</td></tr>
+      <tr><td>Estado de verificación del registro profesional</td><td>Lo asigna el equipo de Docto; vos no podés modificarlo</td><td>Indicar si tu registro profesional fue verificado</td><td>Servidores de Supabase</td></tr>
+      <tr><td>Calculadoras favoritas</td><td>Las marcás en la app</td><td>Sincronizarlas entre tus dispositivos</td><td>Servidores de Supabase y una copia en tu dispositivo</td></tr>
+      <tr><td>Notas personales sobre fármacos</td><td>Las escribís vos</td><td>Recordatorios personales</td><td>Solo en tu dispositivo; nunca se envían a nuestros servidores</td></tr>
+      <tr><td>Preferencias (tema claro u oscuro) y sesión iniciada</td><td>Uso de la app</td><td>Funcionamiento de la app</td><td>Solo en tu dispositivo</td></tr>
+      <tr><td>Datos técnicos: dirección IP, tipo de dispositivo, sistema operativo, versión de la app y registros de conexión</td><td>Se generan automáticamente al conectarse a nuestros servicios</td><td>Entregar actualizaciones de la app, mantener el servicio funcionando y prevenir abusos</td><td>Proveedores de infraestructura (Supabase y Expo)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 id="no-recopilamos">3. Lo que no recopilamos</h2>
+  <ul>
+    <li>No accedemos a tu ubicación, contactos, cámara, micrófono, fotos ni archivos. La app no solicita esos permisos.</li>
+    <li>No usamos identificadores publicitarios, publicidad, herramientas de analítica ni rastreo entre apps o sitios de terceros.</li>
+    <li>No vendemos ni alquilamos datos personales.</li>
+    <li>No recopilamos datos de pacientes. Los valores que ingresás en las calculadoras y en el verificador de interacciones se procesan en tu dispositivo y no se envían a ningún servidor.</li>
+  </ul>
+
+  <h2 id="finalidades">4. Finalidades y base legal</h2>
+  <p>Tratamos tus datos únicamente para:</p>
+  <ul>
+    <li><strong>Prestar el servicio que pediste:</strong> crear y mantener tu cuenta, iniciar sesión y sincronizar tu perfil y tus favoritos.</li>
+    <li><strong>Mantener la app segura y actualizada:</strong> entregar actualizaciones, diagnosticar fallas y prevenir usos indebidos.</li>
+    <li><strong>Cumplir obligaciones legales</strong> cuando una autoridad competente lo requiera conforme a la ley.</li>
+  </ul>
+  <p>La base del tratamiento es tu consentimiento, que das al crear la cuenta y completar tu perfil, y la necesidad de tratar esos datos para prestarte el servicio. Podés retirar tu consentimiento en cualquier momento eliminando tu cuenta.</p>
+
+  <h2 id="dispositivo">5. Datos en tu dispositivo</h2>
+  <p>El contenido clínico (vademécum, CIE-10, calculadoras e interacciones) está en una base de datos local, así que la mayor parte de la app funciona sin conexión. En el almacenamiento interno de la app también se guardan tu sesión, una copia de tu perfil y tus favoritos, tus preferencias y tus notas.</p>
+  <div class="note">
+    <p><strong>Sobre las notas:</strong> se guardan sin cifrar en tu dispositivo, no se sincronizan con tu cuenta y se pierden al desinstalar la app. Cualquier persona con acceso a tu teléfono podría leerlas. No incluyas datos que identifiquen a pacientes. La app te lo recuerda antes de escribir tu primera nota.</p>
+  </div>
+  <p>Al cerrar sesión se borran de la app tu perfil y tus favoritos. Al desinstalarla se borran todos los datos locales.</p>
+
+  <h2 id="proveedores">6. Proveedores y transferencias internacionales</h2>
+  <p>No compartimos tus datos con terceros con fines comerciales ni publicitarios. Usamos estos proveedores, que tratan los datos por cuenta nuestra y solo para operar la app:</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Proveedor</th><th>Función</th><th>Datos que trata</th><th>Política</th></tr></thead>
+    <tbody>
+      <tr><td>Supabase</td><td>Base de datos y autenticación</td><td>Correo, hash de la contraseña, perfil, favoritos y registros técnicos de conexión</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+      <tr><td>Expo (EAS Update)</td><td>Distribución de actualizaciones de la app</td><td>Datos técnicos del dispositivo y de la versión instalada, y dirección IP</td><td><a href="https://expo.dev/privacy">expo.dev/privacy</a></td></tr>
+      <tr><td>Google Play y Apple App Store</td><td>Distribución e instalación de la app</td><td>Los que cada tienda recopila según sus propias políticas</td><td><a href="https://policies.google.com/privacy">Google</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Estos proveedores pueden almacenar los datos en servidores fuera de Paraguay, por ejemplo en Estados Unidos. En ese caso, los datos quedan protegidos por los compromisos contractuales y las medidas de seguridad de cada proveedor.</p>
+  <p>Solo divulgaremos datos personales si lo exige una ley o una orden de una autoridad competente.</p>
+
+  <h2 id="seguridad">7. Seguridad</h2>
+  <ul>
+    <li>Toda la comunicación con nuestros servidores viaja cifrada mediante HTTPS/TLS.</li>
+    <li>Con las reglas de seguridad a nivel de fila, cada cuenta solo puede leer y modificar sus propios datos.</li>
+    <li>Las contraseñas se almacenan como hash y nunca en texto plano.</li>
+    <li>El estado de verificación profesional no puede ser modificado desde la cuenta del usuario.</li>
+  </ul>
+  <p>Ningún sistema es completamente invulnerable. Si detectamos un incidente que afecte tus datos, te lo comunicaremos sin demoras indebidas.</p>
+
+  <h2 id="conservacion">8. Conservación</h2>
+  <p>Conservamos los datos de tu cuenta mientras esta exista. Cuando la eliminás, borramos de inmediato tu cuenta, tu perfil y tus favoritos de nuestra base de datos. Las copias de seguridad de la infraestructura pueden conservar datos durante un período limitado antes de sobrescribirse. Los registros técnicos se guardan solo el tiempo necesario para operar y proteger el servicio.</p>
+
+  <h2 id="eliminar-cuenta">9. Cómo eliminar tu cuenta y tus datos</h2>
+  <h3>Desde la app</h3>
+  <ol>
+    <li>Abrí Docto e iniciá sesión.</li>
+    <li>Tocá tu avatar (arriba a la derecha) para ir a <strong>Perfil</strong>.</li>
+    <li>Elegí <strong>Eliminar cuenta</strong> y confirmá.</li>
+  </ol>
+  <p>Se eliminan de forma permanente tu cuenta, tu correo, tu perfil profesional y tus calculadoras favoritas. Las notas y preferencias locales se borran al desinstalar la app.</p>
+  <h3>Sin acceso a la app</h3>
+  <p>Escribí a <a href="mailto:roberto.migliore@iribas.com.py?subject=Eliminar%20mi%20cuenta%20de%20Docto">roberto.migliore@iribas.com.py</a> desde el correo con el que te registraste, con el asunto «Eliminar mi cuenta de Docto». Procesamos la solicitud en un plazo máximo de 30 días y te confirmamos por correo cuando esté hecha.</p>
+
+  <h2 id="derechos">10. Tus derechos</h2>
+  <p>Podés acceder a tus datos, rectificarlos, actualizarlos, eliminarlos u oponerte a su tratamiento, conforme a la legislación paraguaya aplicable y al derecho de hábeas data reconocido por la Constitución Nacional. Podés editar tu perfil directamente desde la app. Para el resto de las solicitudes, escribí al contacto indicado en la sección 1.</p>
+
+  <h2 id="menores">11. Menores de edad</h2>
+  <p>Docto está dirigida a profesionales y estudiantes de la salud y no está destinada a menores de 18 años. No recopilamos datos de menores a sabiendas. Si creés que un menor nos proporcionó datos, escribinos y los eliminaremos.</p>
+
+  <h2 id="aviso-clinico">12. Aviso clínico</h2>
+  <p>Docto apoya la decisión clínica, pero no la reemplaza. La información de la app es de referencia y debe ser verificada por un profesional antes de usarla en la atención de pacientes.</p>
+
+  <h2 id="cambios">13. Cambios a esta política</h2>
+  <p>Si cambiamos esta política, publicaremos la nueva versión en esta misma dirección con su fecha de vigencia. Si el cambio es importante, también te avisaremos dentro de la app antes de que entre en vigor.</p>
+
+  <footer>Docto · Soporte a la decisión clínica para Paraguay · Contacto: <a href="mailto:roberto.migliore@iribas.com.py">roberto.migliore@iribas.com.py</a></footer>
+</main>
+</body>
+</html>
